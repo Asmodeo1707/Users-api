@@ -1,0 +1,133 @@
+/* --- CSS Var --- */
+:root{
+  --color-yellow: #FBDA61;
+  --color-white: #FFFFDE;
+  --color-pink: #FF5ACD;
+  --color-puple: #C499BA;
+  --color-Seafoam-Splashes: #abf4c4;
+  --color-dark: #4C4E61;
+  --color-Candy-Grape-Fizz: #7b54f0;
+}
+/* --- Reset --- */
+body{
+    font-size: 15px;
+    margin: 0;
+    height: 100vh;
+}
+span {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+.bth_create, .bth_submit{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.bth_create{
+  display: block;
+  position: relative;
+  top: -33px;
+  left: 100%;
+  transform: translateX(-100%);
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 0 #000a;
+}
+.Form{
+  background-color: var(--color-Candy-Grape-Fizz);
+  opacity: 0.85;
+  padding: 15px;
+  border-radius: 25px;
+  width: 300px;
+  height: auto;
+  font-size: min(100%, 300px);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+/* --- Mobile --- */
+.body{
+  padding: 80px 30px;
+  background-color: var(--color-puple);
+}
+h1 .Title{
+  margin-bottom: 50px;
+  font-weight: var(--weigth-bold) ;
+}
+.header{
+  margin-bottom: 50px;
+}
+span {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--color-white);
+  padding-right: 30px;
+}
+.bth_create:active{
+  box-shadow: 0 0 0 0 #000a;
+  transition: box-shadow 200ms ease;
+}
+.Form{
+  display: block;
+  position: relative;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px 0 #000a;
+  }
+.Container_card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card {
+  width: min(100%, 300px);
+  height: 180px;
+  padding: 20px;
+  background-color: var(--color-yellow);
+  background-image: linear-gradient(45deg, var(--color-yellow) 0%, var(--color-pink) 100%);
+  border-radius: 12px;
+  text-align: center;
+}
+.user_card, li{
+  color: var(--color-white);
+}
+.card_email, .card_birthday{
+  color: var(--color-Seafoam-Splashes);
+}
+.bth{
+  display: flex;
+  gap: 10px;
+}
+.bth_delete, .bth_update{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  box-shadow: 0 10px 20px 0 var(--color-dark);
+}
+/* --- Tablet --- */
+@media screen and (min-width: 685px) and (-width: 855px){
+  .header{
+    margin-bottom: 30px;
+  }
+  span{
+    font-size: 3.5rem;
+  }
+  .Form{
+    display: block;
+    position: relative;
+    top: -152px;
+    left: 50%;
+    transform: translateX(-26%);
+    box-shadow: 1px 1px 5px 0 #000a;
+  }
+  .Container_card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
